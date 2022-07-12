@@ -1,0 +1,80 @@
+\documentclass[12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{a4wide}
+\usepackage[Lenny]{fncychap}
+\usepackage[italic]{hepnames}
+\usepackage{graphicx}
+\graphicspath{{images/}}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\bfseries\nouppercase\leftmark}
+\cfoot{\thepage}
+\newcommand{\q}[1]{``#1''}
+\usepackage{multirow}
+\usepackage{gensymb}
+\usepackage{array}
+\usepackage[resetlabels,labeled]{multibib}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{amsmath}
+\usepackage{wrapfig}
+\usepackage{sidecap}
+\title{Thesis Title}
+\author{Meena Nadeem}
+\date{Day Month Year}
+
+\begin{document}
+
+\input{chapters/title}
+
+
+
+
+\chapter*{Dedication}
+\input{chapters/Aknowledgement}
+\thispagestyle{empty}
+
+\chapter*{Abstract}
+\hspace{5mm}The detection of a new particle with mass approximately 125 GeV and properties consistent with Higgs Boson affirmed the Standard Model (SM) of particle physics, a theory which till now explained three of the four known fundamental forces. The Standard Model of particle physics was able to quite accurately match the theoretical calculations to the corresponding experimental checks. However it was still undiscovered; how $W$ and $Z$ boson attained mass while the photon remained massless, how to keep local gauge symmetry intact and validating the theory at TeV energy scale or, similarly, at smaller distances.\\
+
+Hence, LHC was built by the scientific community in 2008, the main purpose of which was to investigate the so called ``God particle", Higgs boson, as it gives mass to all matter. Higgs boson was discovered in 2012 \cite{<ob1>,<ob2>} and after that studies have been going on to further understand its nature. In this thesis, we will model the Higgs signal around mass $m_H$=125 GeV for five main production modes collected from its decay through the ($H \rightarrow ZZ^* \rightarrow 4l$) ``Golden Channel'', where $l=\mu,e$, using Run II data accumulated in the CMS detector. We will use statistical functions to model and fit the data for the Higgs signal and irreducible background. It will list the yields calculated for the 2016, 2017 and 2018 Monte Carlo (MC) data samples. Lastly, the signal strength modifier for Higgs boson will be measured for whole Run II data at centre-of-mass energy $\sqrt{s}$=13 TeV.
+
+
+\thispagestyle{empty}
+
+\tableofcontents
+
+
+\chapter{Introduction to Particle Physics}
+\input{chapters/Standard}
+
+\chapter{Compact Muon Solenoid}
+\input{chapters/cms}
+
+\chapter{Signal Strength Modifier}
+\input{chapters/signal}
+
+\chapter{Results And Discussion}
+\input{chapters/results}
+
+\chapter*{Conclusion}
+\vspace{-8mm}
+\hspace{5mm} In this thesis, the Higgs signal from the $H \rightarrow ZZ \rightarrow 4l$ is studied for the data collected in 2016, 2017 and 2018 corresponding to integrated luminosity 35.9 fb$^{-1}$, 41.5 fb$^{-1}$ and 59.7 fb$^-1$ respectively, during in Run II of LHC by the CMS experiment at the centre of mass energy 13 TeV.\\
+
+The analysis techniques are enhanced by targeting sub-dominant production modes and new event categories are introduced every year; in 2017 associated VH and associated $t\bar{t}H$ production modes are selected for hardonic and leptonic decay channels. In 2018 the categories; Untagged, VBF-2jet, VH-hadronic, and VH-leptonic are subdivided utilizing new variables like ZZ candidate transverse momentum and the two jets with leading invariant masses.\\
+
+The Higgs boson signal is modelled using Double Sided Crystal Ball function $dCB$ around Higgs mass $m_H = 125$ GeV. The sum of PDF are fitted for all production modes using Run II MC samples. The irreducible background for fusion of two gluons $gg \rightarrow ZZ$ and annihilation of quark anti-quark $q\bar{q} \rightarrow ZZ$ is fitted using the Chebyshev's polynomial estimation for third order. A pull distribution is also graphically shown to validate the statistical functions used.\\
+
+The properties, such as signal strength are measured in four lepton channel by the dectector. The expected value of signal strength is $\mu_{expected} = 1.00^{+0.08}_{-0.07}$(stat)$^{+0.10}_{-0.08}$(syst) and the observed value is $\mu_{observed} = 0.94\pm0.07$(stat)$^{+0.09}_{-0.08}$(syst). So far the measurement performed shows consistency in the properties of the Higgs, inside the current precision, compared to SM expectations with a minimal scalar sector, such as one physical Higgs boson used.\\
+
+The HL-LHC is going open pathways for Higgs study, producing around $1.7 \times 10^8$ Higgs and $\PHiggs \PHiggs$ events upto $1.21 \times 10^5$ with an integrated luminosity of 3000 fb$^{-1}$ at $\sqrt{s}$ = 14 TeV. Run III of LHC will further the study of rare decays of SM Higgs and its properties, Higgs couplings, pair production in Higgs, and new physics in Higgs sector in Beyond Standard Model (BSM), Dark Matter-Higgs coupling, or if it is composite (a Goldstone boson).
+
+
+\bibliographystyle{unsrt}
+\bibliography{references}
+
+\appendix
+\chapter{Irreducible Background}
+\input{chapters/appendix}
+\end{document}
